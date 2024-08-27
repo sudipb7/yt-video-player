@@ -12,7 +12,7 @@ export default function App() {
           element={<Home />}
         />
         <Route
-          path="/:videoId"
+          path="/player/:videoId"
           element={<VideoPlayer />}
         />
       </Routes>

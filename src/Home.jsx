@@ -3,7 +3,7 @@ export default function Home() {
     e.preventDefault();
     const videoId = e.target.videoId.value;
     if (videoId) {
-      window.location.href = `/${videoId}`;
+      window.location.href = `/player/${videoId}`;
     }
   };
 
