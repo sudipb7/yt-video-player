@@ -1,9 +1,7 @@
-import { useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Play, Pause, Loader2, Volume2, VolumeX } from "lucide-react";
 
-const VideoPlayer = () => {
-  const videoId = useParams().videoId;
+const VideoPlayer = ({ videoId }) => {
   const [player, setPlayer] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
